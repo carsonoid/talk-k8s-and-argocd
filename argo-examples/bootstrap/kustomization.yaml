@@ -1,0 +1,3 @@
+resources:
+- aoa-app.yaml
+- cert-manager-app.yaml

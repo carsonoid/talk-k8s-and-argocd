@@ -1,0 +1,19 @@
+apiVersion: networking.k8s.io/v1beta1
+kind: Ingress
+metadata:
+  name: nginx
+  annotations:
+    cert-manager.io/issuer: selfsigned-issuer
+spec:
+  rules:
+    - host: argocd-nginx.local
+      http:
+        paths:
+          - path: /
+            backend:
+              serviceName: nginx
+              servicePort: 80
+  tls:
+    - hosts:
+        - argocd-nginx.local
+      secretName: nginx-tls
