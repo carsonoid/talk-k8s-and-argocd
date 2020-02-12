@@ -485,6 +485,22 @@ spec:
 # Argo-CD Live Demo
 
 ---
+
+# New Problems
+
+## Secrets in Git
+
+- Vault
+- Cloud Secret Services
+- ExternalSecrets
+- SealedSecrets
+
+## Kubernetes Best-Practices
+
+- Popeye: Best-Practices
+- Kube-Hunter: Security Scan
+
+---
 <!--
 _paginate: false
 _footer: ""
