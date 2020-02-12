@@ -1,0 +1,13 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: secure-site
+spec:
+  project: default
+  source:
+    repoURL: "https://github.com/carsonoid/talk-k8s-and-argocd.git"
+    path: argo-examples/secure-site
+    targetRevision: HEAD
+  destination:
+    server: "https://kubernetes.default.svc"
+    namespace: default
