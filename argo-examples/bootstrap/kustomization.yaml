@@ -1,3 +1,4 @@
 resources:
-- aoa-app.yaml
-- cert-manager-app.yaml
+  - aoa-app.yaml
+  - cert-manager-app.yaml
+  - secure-site-app.yaml
